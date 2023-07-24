@@ -32,16 +32,32 @@
             </div>
         </nav>
         <img src="images/RAN_7946_v1.JPG" alt="Rock Band" class="hero-image">
+        <div class="audio-player">
+            <audio id="audio" loop>
+                <source src="/multimedia/Little Boy Departs Final WAV.wav" type="audio/wav">
+            </audio>
+            <div class="player-controls">
+                <button id="playAudio"></button>
+                <div id="seekObjContainer">
+                    <div id="seekObj">
+                      <div id="percentage"></div>
+                    </div>
+                </div>
+            </div>
+            <p><small id="currentTime">00:00</small></p>
+        </div>
         <article class="hero-text">
             <p>The Empty Room’s music has been described as “vulnerable” and “comforting”.  One major influence in the music is the prevalence of suffering in ourselves and the world around us.  Counseling theory and experience oftentimes intersect within the narrative of the tracks, creating something deeper than sounds and words.</p>
         </article>
     </div>
-
     <footer>
-        <audio controls autoplay>
-            <source src="multimedia/Little Boy Departs Final WAV.wav" type="audio/wav">
-        </audio>
-        <a href="https://theemptyroomband.bandcamp.com/" class=""><i class="fa-brands fa-bandcamp"></i></a>
+        <div class="fa">
+            <a href="https://theemptyroomband.bandcamp.com/" target="_blank"><i class="fa-brands fa-bandcamp"></i></a>
+            <a href="https://www.facebook.com/TheEmptyRoomBand" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/the_emptyroom/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/2SXgb7gOYeCaVBJJsri7GI" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://soundcloud.com/theemptyoomband" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+        </div>
     </footer>
     <script src="/scripts/main.js"></script>
     
